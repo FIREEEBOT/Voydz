@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 INNEXIA_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **FLORENZA** ` super bot`
+`Heya` 🤗 `I am` **STAXEN** ` super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
@@ -85,9 +85,9 @@ buttons = [
             text="❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ", url=f"https://github.com/T5FR0CK5T4R/florenzabot"),
+        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ", url=f"https://telegra.ph/STAXEN-REPO-09-14"),
         InlineKeyboardButton(
-            text="Vᴄ Pʟᴀʏᴇʀ 🎶", url=f"https://telegra.ph/s-09-13-3"
+            text="Vᴄ Pʟᴀʏᴇʀ 🎶", url=f"https://telegra.ph/STAXEN-VC-HELP-09-14"
         ),
     ],
     [
@@ -97,7 +97,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Florenza_bot?startgroup=true"),
+        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/staxenXbot?startgroup=true"),
     ],
 ]
 
@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Florenza_support")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/staxentransfer")]]
             ),
         )
         
@@ -355,7 +355,7 @@ def innexia_about_callback(update, context):
     query = update.callback_query
     if query.data == "innexia_":
         query.message.edit_text(
-            text=""" 𝐅𝐥𝐨𝐫𝐞𝐧𝐳𝐚 - A bot to manage your groups with additional features!
+            text=""" 𝗦𝗧𝗔𝗫𝗘𝗡 - A bot to manage your groups with additional features!
             \nHere's the basic help regarding use of Florenza.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
@@ -366,10 +366,10 @@ def innexia_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/Florenza_support"
+                            text="Bᴜɢ'ꜱ", url="t.me/staxentransfer"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/Florenza_updates"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/staxentransfer"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="innexia_back")],
@@ -448,12 +448,12 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/Florenza_Logs"),
-                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/FlorenzaFedChat"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/staxentransfer"),
+                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/staxentransfer"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Florenza_support"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/florenza_updates"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/staxentransfer"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/staxentransfer"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
@@ -464,18 +464,18 @@ def innexia_about_callback(update, context):
         )
     elif query.data == "florenza_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR FLORENZA DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Florenza Bot",
+            text=f"<b> CREDIT FOR STAXEN DEV'S</b>\n"
+            f"\nHere Some Developers Helping in Making The STAXEN Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ROCKSTAR", url="t.me/T5F_R0CK5T4R"),
-                    InlineKeyboardButton(text="RAPSTAR", url="t.me/owner_of_tsf_rapstar"),
+                    InlineKeyboardButton(text="DEVELOPER", url="t.me/staxen_x"),
+                    InlineKeyboardButton(text="OWNER", url="t.me/staxen_x"),
                  ],
                  [
-                    InlineKeyboardButton(text="ANGAD", url="t.me/Cad_baly"),
-                    InlineKeyboardButton(text="KING", url="https://t.me/ITZ_RAISTAR"),
+                    InlineKeyboardButton(text="CO-DEVELOPER", url="t.me/creatorpavanx"),
+                    InlineKeyboardButton(text="CO-OWNER", url="https://t.me/creatorpavanx"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
@@ -491,8 +491,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *Florenza*
-                 \nHere is the [🔥Source Code🔥](https://github.com/T5fr0ck5t4r/flozenzabot) .""",
+            text=""" Hi..😻 I'm *STAXEN*
+                 \nHere is the [🔥Source Code🔥](https://telegra.ph/STAXEN-REPO-09-14) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -745,7 +745,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1975644370 and DONATION_LINK:
+        if OWNER_ID != 1956434828 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -793,7 +793,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I Aᴍ Aʟɪᴠᴇ 🔥")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I Am STAXEN")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
