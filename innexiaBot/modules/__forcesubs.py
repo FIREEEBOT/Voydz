@@ -1,5 +1,3 @@
-# credits @InukaAsith, @Mr_dark_prince
-
 import logging
 import time
 
