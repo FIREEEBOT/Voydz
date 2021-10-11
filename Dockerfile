@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/innexiaBot
-RUN git clone -b shiken https://github.com/Rexinazor/Kizuna-bot/root/innexiabot
-WORKDIR /root/innexiabot
+RUN git clone -b shiken https://github.com/Rexinazor/Kizuna-bot/root/Kizuna-bot
+WORKDIR /root/Kizuna-bot
 
 #Copy config file to /root/innexiabot/innexiabot
-COPY ./innexiabot/sample_config.py ./innexiabot/config.py* /root/innexiabot/innexiabot/
+COPY ./Kizuna-bot/sample_config.py ./Kizuna-bot/config.py* /root/Kizuna-bot/Kizuna-bot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","innexiabot"]
+CMD ["python3","-m","Kizuna-bot"]
