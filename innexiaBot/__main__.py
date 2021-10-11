@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Heya ^.^{}, my name is [Kizuna](https://telegra.ph/file/53a8d858f6e83debec3ce.jpg)!
+Heya ^.^{}, my name is [Kizuna](https://telegra.ph/file/c5cda2640954023bc1504.jpg)!
 I am a Dynamic Anime themed Group Management bot to make your group managed! .
 """
 
