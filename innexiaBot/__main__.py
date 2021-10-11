@@ -72,32 +72,31 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-INNEXIA_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **FLORENZA** ` super bot`
-`I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
+Heya ^.^{}, my name is [Kizuna](https://telegra.ph/file/53a8d858f6e83debec3ce.jpg)!
+I am a Dynamic Anime themed Group Management bot to make your group managed! .
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help_back"),
+            text="Help and Commands", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ", url=f"https://github.com/T5FR0CK5T4R/florenzabot"),
+        InlineKeyboardButton(text="Fedration", url=f"http://t.me/TheHazardNetwork"),
         InlineKeyboardButton(
-            text="Vᴄ Pʟᴀʏᴇʀ 🎶", url=f"https://telegra.ph/s-09-13-3"
+            text="Support", url=f"http://t.me/HazardBot_Support"
         ),
     ],
     [
-        InlineKeyboardButton(text="📜 Aʙᴏᴜᴛ", callback_data="innexia_"),
+        InlineKeyboardButton(text="About", callback_data="Kizuna_"),
         InlineKeyboardButton(
-            text="Bᴀꜱɪᴄ Hᴇʟᴘ 👮", callback_data="innexia_basichelp"
+            text="Basic Help", callback_data="Kizuna_basichelp"
         ),
     ],
     [
-        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Florenza_bot?startgroup=true"),
+        InlineKeyboardButton(text="➕️ Add Kizuna to your group ➕️", url="http://t.me/Kizuna_Robot?startgroup=true"),
     ],
 ]
 
@@ -223,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Florenza_support")]]
+                [[InlineKeyboardButton(text="Support", url="t.me/HazardBot_Support")]]
             ),
         )
         
@@ -353,10 +352,10 @@ def help_button(update, context):
 @run_async
 def innexia_about_callback(update, context):
     query = update.callback_query
-    if query.data == "innexia_":
+    if query.data == "Kizuna_":
         query.message.edit_text(
-            text=""" 𝐅𝐥𝐨𝐫𝐞𝐧𝐳𝐚 - A bot to manage your groups with additional features!
-            \nHere's the basic help regarding use of Florenza.
+            text=""" Kizuna - A Anime Themed bot to manage your groups with additional features!
+            \nHere's the basic help regarding use of Kizuna.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
             \nReport error/bugs click the Button""",
@@ -366,13 +365,13 @@ def innexia_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/Florenza_support"
+                            text="Error", url="t.me/HazardBot_Support"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/Florenza_updates"
+                            text="Updates", url="t.me/Hazard_Bots"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="innexia_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="Kizuna_back")],
                 ]
             ),
         )
@@ -390,7 +389,7 @@ def innexia_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@Florenza_bot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@Kizuna_RoBot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -398,24 +397,24 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="florenza_admin"),
-                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="florenza_notes"),
+                    InlineKeyboardButton(text="Admin", callback_data="Kizuna_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="Kizuna_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="florenza_support"),
-                    InlineKeyboardButton(text="Credit", callback_data="florenza_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="Kizuna_support"),
+     
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="innexia_back"),
+                    InlineKeyboardButton(text="Back", callback_data="Kizuna_back"),
                  
                  ]
                 ]
             ),
         )
-    elif query.data == "innexia_admin":
+    elif query.data == "Kizuna_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, Innexia now ready to manage your group."
+            f"\nCongragulations, Kizuna now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -425,11 +424,11 @@ def innexia_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="innexia_basichelp")]]
+                [[InlineKeyboardButton(text="Back", callback_data="Kizuna_basichelp")]]
             ),
         )
 
-    elif query.data == "innexia_notes":
+    elif query.data == "Kizuna_notes":
         query.message.edit_text(
             text=f"<b> Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -440,9 +439,9 @@ def innexia_about_callback(update, context):
                 [[InlineKeyboardButton(text="Back", callback_data="innexia_basichelp")]]
             ),
         )
-    elif query.data == "innexia_support":
+    elif query.data == "Kizuna_support":
         query.message.edit_text(
-            text="* Innexia support chats*"
+            text="* Kizuna support chats*"
             "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -462,28 +461,7 @@ def innexia_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "florenza_credit":
-        query.message.edit_text(
-            text=f"<b> CREDIT FOR FLORENZA DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Florenza Bot",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                    InlineKeyboardButton(text="ROCKSTAR", url="t.me/T5F_R0CK5T4R"),
-                    InlineKeyboardButton(text="RAPSTAR", url="t.me/owner_of_tsf_rapstar"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="ANGAD", url="t.me/Cad_baly"),
-                    InlineKeyboardButton(text="KING", url="https://t.me/ITZ_RAISTAR"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
-                 
-                 ]
-                ]
-            ),
-        )
+
         
         
 @run_async
@@ -491,8 +469,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *Florenza*
-                 \nHere is the [🔥Source Code🔥](https://github.com/T5fr0ck5t4r/flozenzabot) .""",
+            text=""" Hi..^_^ I'm Kizuna
+                 \nMay be Revealed soon ^_~ .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -543,13 +521,13 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Hᴇʟᴘ ❔",
+                            text="HELP ❔",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ 📢 ",
+                            text="SUPPORT ",
                             url="https://t.me/{}".format(SUPPORT_CHAT),
                         )
                     ],
