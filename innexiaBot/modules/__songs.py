@@ -1,7 +1,5 @@
 import os
 
-#Saavn 
-
 import requests
 import wget
 from pyrogram import filters
@@ -35,11 +33,8 @@ async def song(client, message):
     await message.reply_audio(audio=ffile, title=sname, performer=ssingers)
     os.remove(ffile)
     await m.delete()
-
-
-#deezer#
-# Credits for @TheHamkerCat
-
+    
+    \
 import os
 import aiofiles
 import aiohttp
