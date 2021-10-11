@@ -45,7 +45,7 @@ def t(milliseconds: int) -> str:
     return tmp[:-2]
 
 
-airing_query = 
+airing_query = '''
     query ($id: Int,$search: String) { 
       Media (id: $id, type: ANIME,search: $search) { 
         id
@@ -62,9 +62,9 @@ airing_query =
         } 
       }
     }
-    
+    '''
 
-fav_query = 
+fav_query = """
 query ($id: Int) { 
       Media (id: $id, type: ANIME) { 
         id
@@ -75,9 +75,9 @@ query ($id: Int) {
         }
      }
 }
+"""
 
-
-anime_query = 
+anime_query = '''
    query ($id: Int,$search: String) { 
       Media (id: $id, type: ANIME,search: $search) { 
         id
@@ -112,8 +112,8 @@ anime_query =
           bannerImage
       }
     }
-
-character_query = 
+'''
+character_query = """
     query ($query: String) {
         Character (search: $query) {
                id
@@ -129,9 +129,9 @@ character_query =
                description
         }
     }
+"""
 
-
-manga_query = 
+manga_query = """
 query ($id: Int,$search: String) { 
       Media (id: $id, type: MANGA,search: $search) { 
         id
@@ -153,7 +153,7 @@ query ($id: Int,$search: String) {
           bannerImage
       }
     }
-
+"""
 
 url = 'https://graphql.anilist.co'
 
