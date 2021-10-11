@@ -65,8 +65,8 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/innexiaBot
-RUN git clone -b shiken https://github.com/Rexinazor/Kizuna-bot/root/innexiaBot
-WORKDIR /root/innexiaBot
+RUN git clone -b shiken https://github.com/QueenArzoo/innexiabot /root/innexiabot
+WORKDIR /root/innexiabot
 
 #Copy config file to /root/innexiabot/innexiabot
 COPY ./innexiabot/sample_config.py ./innexiabot/config.py* /root/innexiabot/innexiabot/
