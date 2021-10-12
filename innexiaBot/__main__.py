@@ -447,8 +447,8 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/ESdeathlog"),
-                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/FlorenzaFedChat"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/voydzLog"),
+                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/ESdeathnet"),
                  ],
                  [
                     InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/cyber_punk1"),
