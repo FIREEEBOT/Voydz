@@ -1,5 +1,5 @@
 {
-      "name": "Kizuna bot",
+      "name": "Voydz bot",
       "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -8,7 +8,7 @@
          "manager",
          "Kizuna"
       ],   
-   "repository": "https://github.com/Rexinazor/Kizuna-bot",
+   "repository": "https://github.com/FIREEEBOT/Voydz",
    "addons": [
       {
          "options": {
