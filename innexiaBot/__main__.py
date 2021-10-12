@@ -74,8 +74,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Heya ^.^{}, my name is [Kizuna](https://telegra.ph/file/c5cda2640954023bc1504.jpg)!
-I am a Dynamic Anime themed Group Management bot to make your group managed! .
+Heya ^.^{}, my name is [Voydz](https://telegra.ph/file/b9235649fcba19311dc6c.jpg)!
+I am a Dynamic Anime themed Group Management bot to make your group managed powered by ESdeath Network! .
 """
 
 buttons = [
@@ -86,7 +86,7 @@ buttons = [
     [
         InlineKeyboardButton(text="Fedration", url=f"http://t.me/TheHazardNetwork"),
         InlineKeyboardButton(
-            text="Support", url=f"http://t.me/HazardBot_Support"
+            text="Support", url=f"http://t.me/cyber_punk1"
         ),
     ],
     [
@@ -96,7 +96,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="➕️ Add Kizuna to your group ➕️", url="http://t.me/Kizuna_Robot?startgroup=true"),
+        InlineKeyboardButton(text="➕️ Add Voydz to your group ➕️", url="http://t.me/ESdeathvoydz_bot?startgroup=true"),
     ],
 ]
 
@@ -354,8 +354,8 @@ def innexia_about_callback(update, context):
     query = update.callback_query
     if query.data == "Kizuna_":
         query.message.edit_text(
-            text=""" Kizuna - A Anime Themed bot to manage your groups with additional features!
-            \nHere's the basic help regarding use of Kizuna.
+            text=""" Voydz - A Anime Themed bot to manage your groups with additional features!
+            \nHere's the basic help regarding use of Voydz.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
             \nReport error/bugs click the Button""",
@@ -365,10 +365,10 @@ def innexia_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Error", url="t.me/HazardBot_Support"
+                            text="Error", url="t.me/Cyber_punk1"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="t.me/Hazard_Bots"
+                            text="Updates", url="t.me/ESdeathnet"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Kizuna_back")],
@@ -414,7 +414,7 @@ def innexia_about_callback(update, context):
     elif query.data == "Kizuna_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, Kizuna now ready to manage your group."
+            f"\nCongragulations, Voydz now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -447,12 +447,12 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/Florenza_Logs"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/ESdeathlog"),
                     InlineKeyboardButton(text="Fᴇᴅ", url="t.me/FlorenzaFedChat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Florenza_support"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/florenza_updates"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/cyber_punk1"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/ESdeathnet"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
@@ -469,7 +469,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..^_^ I'm Kizuna
+            text=""" Hi..^_^ I'm Voydz
                  \nMay be Revealed soon ^_~ .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
